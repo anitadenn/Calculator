@@ -10,6 +10,11 @@ buttons.forEach(button => {button.addEventListener('click', () => {
         try{
             input = eval(input).toString();
             display.textContent = input;
+            if(input.length > 11){
+                display.style.fontSize = "1.5rem";
+                
+            }
+            
         }
         catch{
             display.textContent = 'Error';
